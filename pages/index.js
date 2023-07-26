@@ -8,7 +8,6 @@ import Cta from "../components/cta";
 import { benefitOne, benefitTwo } from "../components/data";
 import Faq from "../components/faq";
 import Footer from "../components/footer";
-import PopupWidget from "../components/popupWidget";
 import Testimonials from "../components/testimonials";
 import Video from "../components/video";
 
@@ -55,7 +54,7 @@ const Home = () => {
       <Faq />
       <Cta />
       <Footer />
-      <PopupWidget />
+      {/* <PopupWidget /> */}
     </>
   );
 }
