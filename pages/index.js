@@ -28,10 +28,8 @@ const Home = () => {
       <Hero />
       <SectionTitle
         pretitle="Fares Benefits"
-        title=" Why should you use this landing page">
-        Fares is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        title=" Why should you choose our services">
+        Fares is providing high quality technology services and solutions. We can accurately analyze and advise customers.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
