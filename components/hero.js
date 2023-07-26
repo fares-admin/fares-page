@@ -81,7 +81,7 @@ const Hero = () => {
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-5 mt-10 md:justify-around">
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="pt-2 text-gray-400 dark:text-gray-400 w-26 aspect-1 flex items-center">
               {isDark ? (
                 <Image
                   src="/img/brands/mixivivu-white-logo.png"
@@ -96,7 +96,7 @@ const Hero = () => {
                 />
               )}
             </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="pt-2 text-gray-400 dark:text-gray-400 w-26 aspect-1 flex items-center">
               {isDark ? (
                 <Image
                   src="/img/brands/adflex-white.svg"
@@ -107,7 +107,7 @@ const Hero = () => {
                 <Image src="/img/brands/adflex.svg" width="200" height="200" />
               )}
             </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
+            <div className="pt-2 text-gray-400 dark:text-gray-400 w-26 aspect-1 flex items-center">
               <Image src="/img/brands/bbroom.svg" width="200" height="200" />
             </div>
           </div>
