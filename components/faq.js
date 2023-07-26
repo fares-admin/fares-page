@@ -1,7 +1,7 @@
-import React from "react";
-import Container from "./container";
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import React from "react";
+import Container from "./container";
 
 const Faq = () => {
   return (
@@ -35,23 +35,23 @@ const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "Do you work with international clients?",
+    answer: "Yes, we are willing to work with customers in any country.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Do you undertake to operate the system?",
+    answer: "Yes, we aim to be a technology and solutions partner..",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Can you advise me on the process and system you can build for me?",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "Our mission is, of course, digitizing the business.",
   },
-  {
-    question: "Do you offer technical support? ",
-    answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
-  },
+  // {
+  //   question: "Do you offer technical support? ",
+  //   answer:
+  //     "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+  // },
 ];
 
 export default Faq;
