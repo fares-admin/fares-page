@@ -25,16 +25,15 @@ const Navbar = () => {
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    <span>
+                    <span className="max-h-[70px] w-[200px] overflow-hidden flex items-center rounded-lg">
                       <Image
-                        src="/img/logo.svg"
+                        src="/img/FARES.png"
                         alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
+                        width="500"
+                        height="500"
+                        className="w-[100%]"
                       />
                     </span>
-                    <span>Fares</span>
                   </span>
                 </Link>
 
@@ -68,7 +67,7 @@ const Navbar = () => {
                           {item.label}
                       </Link>
                     ))}
-                    <Link href="/contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+                    <Link href="/contact" className="w-full px-6 py-2 mt-3 text-center text-white bg-[#47C1BF] rounded-md lg:ml-5">         
                         Contact us
                     </Link>
                   </>
@@ -92,7 +91,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
-          <Link href="/contact" className="px-6 py-2 text-white bg-indigo-600 rounded-md md:ml-5">
+          <Link href="/contact" className="px-6 py-2 text-white bg-[#47C1BF] rounded-md md:ml-5">
               Contact us
           </Link>
 

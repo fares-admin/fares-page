@@ -25,7 +25,7 @@ const ContactForm = () => {
 
   return (
     <Container>
-      <div className="flex flex-col items-center justify-center w-full max-w-4xl gap-5 mx-auto text-white bg-indigo-600 px-7 py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl">
+      <div className="flex flex-col items-center justify-center w-full max-w-4xl gap-5 mx-auto text-white bg-[#47C1BF] px-7 py-7 lg:px-12 lg:py-12 lg:flex-nowrap rounded-xl">
         <div className="flex-grow text-center lg:text-left">
           <h2 className="text-2xl font-medium lg:text-3xl">
             Send us your question and information?
@@ -35,7 +35,7 @@ const ContactForm = () => {
           id="name"
           value={form.name}
           onChange={onChange}
-          className="w-full inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
+          className="w-full inline-block py-3 mx-auto text-lg font-medium text-center text-[#47C1BF] bg-white rounded-md px-7 lg:px-10 lg:py-5 "
           placeholder="Name"
         />
         <input
@@ -55,7 +55,7 @@ const ContactForm = () => {
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <button
             onClick={sendQuestion}
-            className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
+            className="inline-block py-3 mx-auto text-lg font-medium text-center text-[#47C1BF] bg-white rounded-md px-7 lg:px-10 lg:py-5 "
           >
             {error ? error : "Send question"}
           </button>

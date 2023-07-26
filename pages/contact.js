@@ -6,12 +6,26 @@ import Navbar from "../components/navbar"
 const ContactUs = () => {
     return <>
      <Head>
-        <title>Fares</title>
+        <title>Contact us - Fares is providing solutions and services the hospitality, educations and e-commerces.</title>
         <meta
           name="description"
           content="Fares was officially established with the ambition of providing solutions and services the hospitality, educations and e-commerces."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="og:description"
+          content="Fares was officially established with the ambition of providing solutions and services the hospitality, educations and e-commerces."
+        />
+        <meta
+          name="og:title"
+          content="Contact us - Fares is providing solutions and services the hospitality, educations and e-commerces."
+        />
+        <meta property="og:image" content="/img/FARES.png" />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        <link rel="icon" href="/img/FARES.png" />
       </Head>
 
       <Navbar />

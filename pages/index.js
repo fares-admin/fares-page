@@ -13,20 +13,36 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Fares</title>
+        <title>Fares - Providing solutions and services the hospitality, educations and e-commerces.</title>
         <meta
           name="description"
           content="Fares was officially established with the ambition of providing solutions and services the hospitality, educations and e-commerces."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="og:description"
+          content="Fares was officially established with the ambition of providing solutions and services the hospitality, educations and e-commerces."
+        />
+        <meta
+          name="og:title"
+          content="Fares - Providing solutions and services the hospitality, educations and e-commerces."
+        />
+        <meta property="og:image" content="/img/FARES.png" />
+
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+        />
+        <link rel="icon" href="/img/FARES.png" />
       </Head>
 
       <Navbar />
       <Hero />
       <SectionTitle
         pretitle="Fares Benefits"
-        title=" Why should you choose our services">
-        Fares is providing high quality technology services and solutions. We can accurately analyze and advise customers.
+        title=" Why should you choose our services"
+      >
+        Fares is providing high quality technology services and solutions. We
+        can accurately analyze and advise customers.
       </SectionTitle>
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
@@ -46,7 +62,8 @@ const Home = () => {
       </SectionTitle>
       <Testimonials /> */}
       <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-      Below are frequently asked questions about us. If you have any other questions, please message us via our fanpage.
+        Below are frequently asked questions about us. If you have any other
+        questions, please message us via our fanpage.
       </SectionTitle>
       <Faq />
       <Cta />
@@ -54,6 +71,6 @@ const Home = () => {
       {/* <PopupWidget /> */}
     </>
   );
-}
+};
 
 export default Home;

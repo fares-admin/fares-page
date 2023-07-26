@@ -34,7 +34,7 @@ const benefitOne = {
 };
 
 const benefitTwo = {
-  title: "Product quality is high",
+  title: "High quality product",
   desc: "Always update technology and offer suitable and optimal solutions. We put our heart into the product.",
   image: benefitTwoImg,
   bullets: [

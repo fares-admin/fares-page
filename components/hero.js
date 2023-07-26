@@ -1,8 +1,22 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import Container from "./container";
 
 const Hero = () => {
+  const { theme } = useTheme();
+
+  const [isDark,setIsDark] = useState(false)
+
+  useEffect(() => {
+    if(theme === 'dark'){
+      setIsDark(true)
+    } else {
+      setIsDark(false)
+    }
+  },[theme])
+
   return (
     <>
       <Container className="flex flex-wrap ">
@@ -21,7 +35,7 @@ const Hero = () => {
               <Link
                 href="/contact"
                 rel="noopener"
-                className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md "
+                className="px-8 py-4 text-lg font-medium text-center text-white bg-[#47C1BF] rounded-md "
               >
                 Contact us
               </Link>
@@ -63,21 +77,38 @@ const Hero = () => {
       <Container>
         <div className="flex flex-col justify-center">
           <div className="text-xl text-center text-gray-700 dark:text-white">
-            Trusted by <span className="text-indigo-600">10+</span> customers
+            Trusted by <span className="text-[#47C1BF]">10+</span> customers
           </div>
 
           <div className="flex flex-wrap justify-center items-center gap-5 mt-10 md:justify-around">
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <Image src="/img/brands/mixivivu.svg" width="200" height="200" />
+              {isDark ? (
+                <Image
+                  src="/img/brands/mixivivu-white-logo.png"
+                  width="200"
+                  height="200"
+                />
+              ) : (
+                <Image
+                  src="/img/brands/mixivivu-black-logo.png"
+                  width="200"
+                  height="200"
+                />
+              )}
             </div>
             <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <Image src="/img/brands/adflex.svg" width="200" height="200" />
+              {isDark ? (
+                <Image
+                  src="/img/brands/adflex-white.svg"
+                  width="200"
+                  height="200"
+                />
+              ) : (
+                <Image src="/img/brands/adflex.svg" width="200" height="200" />
+              )}
             </div>
             <div className="pt-2 text-gray-400 dark:text-gray-400">
               <Image src="/img/brands/bbroom.svg" width="200" height="200" />
-            </div>
-            <div className="pt-2 text-gray-400 dark:text-gray-400">
-              <Image src="/img/brands/amazon.svg" width="200" height="200" />
             </div>
           </div>
         </div>
