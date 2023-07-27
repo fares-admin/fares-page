@@ -1,7 +1,5 @@
 import nodemailer from "nodemailer";
 
-export const runtime = 'edge'
-
 export default async function (req, res) {
   try {
     const transporter = nodemailer.createTransport({
