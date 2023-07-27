@@ -5,10 +5,14 @@ import { useEffect, useState } from "react";
 import Container from "./container";
 
 const Hero = () => {
+  const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
 
-  const [isDark,setIsDark] = useState(false)
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), []);
 
+  const [isDark,setIsDark] = useState(false)
+  
   useEffect(() => {
     if(theme === 'dark'){
       setIsDark(true)
@@ -16,6 +20,8 @@ const Hero = () => {
       setIsDark(false)
     }
   },[theme])
+  
+  if (!mounted) return null;
 
   return (
     <>

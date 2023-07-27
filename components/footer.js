@@ -10,6 +10,10 @@ export default function Footer() {
       link:"/"
     },
     {
+      label:"Blogs",
+      link:"/blogs"
+    },
+    {
       label:"Contact us",
       link:"/contact"
     },
